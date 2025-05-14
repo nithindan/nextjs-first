@@ -29,7 +29,7 @@ export async function getStaticPaths() {
             })
         console.log(data)
         return {
-            fallback: true,
+            fallback: 'blocking',
             paths: data
         }
 }
